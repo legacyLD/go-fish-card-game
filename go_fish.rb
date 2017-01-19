@@ -1,17 +1,54 @@
 class PlayingCard
-  # initialize
+
+  RANKS = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
+  SUITS = ["C", "D", "H", "S"]
+  SORTED_CARDS = [
+    "AC", "AD", "AH", "AS", "2C", "2D", "2H", "2S", "3C", "3D", "3H", "3S",
+    "4C", "4D", "4H", "4S", "5C", "5D", "5H", "5S", "6C", "6D", "6H", "6S",
+    "7C", "7D", "7H", "7S", "8C", "8D", "8H", "8S", "9C", "9D", "9H", "9S",
+    "10C", "10D", "10H", "10S", "JC", "JD", "JH", "JS", "QC", "QD", "QH", "QS",
+    "KC", "KD", "KH", "KS"
+  ]
+
+  attr_reader :rank, :suit, :face
+
+  def initialize(arg)
+    @suit = arg[:suit]
+    @rank = arg[:rank]
+    @face = @rank + @suit
+  end
+
+  # def rank
+  #   p @rank
+  # end
+  #
+  # def suit
+  #   p @suit
+  # end
+  #
+  # def face
+  #   @face
+  # end
+
+  def to_s
+    @face
+  end
+
 end
 
 class CardDeck
-  # initialize
+  def initialize
+  end
 end
 
 class HandOfCards
-  # initialize
+  def initialize
+  end
 end
 
 class CardPlayer
-  # initialize
+  def initialize
+  end
 end
 
 
