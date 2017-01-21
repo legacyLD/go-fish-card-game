@@ -36,21 +36,31 @@ class PlayingCard
 
 end
 
-class CardDeck
-  def initialize
+# Card Deck class
+class CardDeck < PlayingCard
+
+  def initialize (arg=true)
   end
+
+  def cards
+    @cards = SORTED_CARDS
+  end
+
 end
 
+# Hand Of Cards class
 class HandOfCards
+
   def initialize
   end
+
 end
 
 class CardPlayer
+
   def initialize
   end
 end
-
 
 # Driver Code
 if __FILE__ == $0
