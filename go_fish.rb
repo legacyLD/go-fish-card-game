@@ -18,18 +18,6 @@ class PlayingCard
     @face = @rank + @suit
   end
 
-  # def rank
-  #   p @rank
-  # end
-  #
-  # def suit
-  #   p @suit
-  # end
-  #
-  # def face
-  #   @face
-  # end
-
   def to_s
     @face
   end
